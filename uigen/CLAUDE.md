@@ -31,7 +31,7 @@ All npm scripts use `NODE_OPTIONS='--require ./node-compat.cjs'` for Node compat
 - `src/lib/` — Core logic: `file-system.ts` (in-memory VFS), `auth.ts` (JWT/bcrypt), `provider.ts` (Claude setup with mock fallback), `contexts/` (React state), `tools/` (AI tool definitions), `prompts/` (system prompt)
 - `src/components/` — Feature components: `chat/`, `editor/`, `preview/`, `auth/`
 - `src/actions/` — Next.js server actions for project CRUD and auth
-- `prisma/` — SQLite schema: `User` and `Project` models (projects store messages + virtual files as JSON)
+- `prisma/` — Database migrations and schema
 
 ### Mock provider
 
@@ -44,6 +44,15 @@ When `ANTHROPIC_API_KEY` is absent, `lib/provider.ts` falls back to a `MockLangu
 ### Auth
 
 JWT-based (HS256, 7-day sessions), bcrypt passwords, session cookies. Anonymous usage is supported — projects are ephemeral unless the user signs in.
+
+## Database
+
+Always reference `prisma/schema.prisma` to understand the database structure. Two models:
+
+- **User** — `id`, `email`, `password` (bcrypt), timestamps, relation to projects
+- **Project** — `id`, `name`, `userId` (optional — anonymous projects have no owner), `messages` (JSON string, chat history), `data` (JSON string, serialized virtual file system), timestamps
+
+SQLite database at `prisma/dev.db`.
 
 ## Environment
 

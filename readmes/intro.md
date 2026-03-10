@@ -25,28 +25,3 @@ Global md file
 
 
 
-
-
-# File mention
-
-use the `@` + path of the file 
-
-```bash
-How does the auth system work ?
-@src/component/auth.tsx
-```
-By mentionning a file we help claude to go straigth away in the right place instead of scrolling the through the code base
-
-
-# Memory mode 
-
-in Claude code typing a `#` will put us in memory mode, and allow to change the claude.md file to add rules 
-
-Type : 
-```bash
-# use comments for only complex code 
---> # rules 
-```
-and then select the file we want to add this new rules to  
-
-Or update the claude.md manualy 
