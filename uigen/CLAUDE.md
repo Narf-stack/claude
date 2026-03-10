@@ -67,3 +67,7 @@ Tests live in `__tests__/` subdirectories alongside source files. Run a single t
 ```bash
 npm run test -- src/components/chat/__tests__/ChatInterface.test.tsx
 ```
+
+Vitest config is in `vitest.config.mts`. Two projects are defined:
+- **`node`** — `src/lib/__tests__/**` (server-side code, no DOM)
+- **`jsdom`** — all other `src/**/__tests__/**` (React components)

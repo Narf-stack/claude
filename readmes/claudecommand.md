@@ -112,3 +112,61 @@ For instance we can simplys say
 ```bash
 This is a tough task so ultrathink about the best way to implement it
 ``` 
+
+
+
+
+
+
+
+
+
+# Controlling Context
+Controlling and directin the flow of conversation
+## Interrupt Claude
+```bash
+Escape
+``` 
+Interrupt Claude, allowing us to redirect or correct it. Also useful to fix issues with `#` memories.
+
+## Repetetive error
+
+```bash
+press "Escape" 
+and then add a memory "#"
+``` 
+In case of repetitive errors we can interrupt Claude while the error is happening, then add a  add a memory `"#" + rule` in the Claude.md file to avoid this mistake in the future.
+
+```bash
+Escape
+# then
+"# vitest config file is in vitest.config.mts"
+``` 
+
+## Rewind a Conversation
+Revert to a previous message
+
+```bash
+Escape + Escape
+``` 
+It will show us all the previously sent messages.
+Removes context not relevant to the current task
+
+## Focus
+Summarize the conversation and continue. Very useful when Claude has learned a lot about the current task.
+```bash
+/compact
+``` 
+Helps Claude stay focused but remember what it has learned in the current session.
+
+## Cleaning
+Dumps current conversation history.
+```bash
+/clear
+``` 
+Useful when switching between different tasks, or after having a long run conversation.
+
+
+
+
+
