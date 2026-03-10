@@ -26,6 +26,7 @@ uigen/build
 
 # misc
 uigen/.DS_Store
+uigen/.playwright-mcp
 uigen/*.pem
 
 # debug

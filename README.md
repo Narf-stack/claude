@@ -1,14 +1,12 @@
 
 
 ## Ollama
-
 - see the [file](readmes/ollama.md).
-## Claude intro
 
+## Claude intro
 - see the [file](readmes/intro.md).
 
 ## Claude command
-
-- see the [file](readmes/claudecommand.md).
+- see the [file](readmes/list/claudecommand.md).
 
 

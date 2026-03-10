@@ -25,3 +25,9 @@ Global md file
 
 
 
+# CLAUDE command
+- see the [file](./list/claudecommand.md).
+
+# MCP server
+- see the [file](./list/mcp.md).
+

@@ -1,0 +1,68 @@
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/frantz/Documents/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Users/frantz/Documents/claude/uigen/package-lock.json
+
+ ⚠ Port 3000 is in use by process 7269, using available port 3001 instead.
+   ▲ Next.js 15.5.12 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://10.157.109.135:3001
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Compiled middleware in 339ms
+ ✓ Ready in 1871ms
+ ○ Compiling / ...
+ ✓ Compiled / in 9.9s
+ GET / 200 in 11288ms
+ ✓ Compiled /favicon.ico in 495ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 815ms
+ GET / 200 in 234ms
+ GET / 200 in 234ms
+ ○ Compiling /api/chat ...
+ ✓ Compiled /api/chat in 568ms
+{
+  error: [Error [AI_APICallError]: Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.] {
+    cause: undefined,
+    url: 'https://api.anthropic.com/v1/messages',
+    requestBodyValues: {
+      model: 'claude-haiku-4-5',
+      max_tokens: 10000,
+      temperature: 0,
+      top_k: undefined,
+      top_p: undefined,
+      stop_sequences: undefined,
+      system: [Array],
+      messages: [Array],
+      tools: [Array],
+      tool_choice: [Object],
+      stream: true
+    },
+    statusCode: 400,
+    responseHeaders: {
+      'anthropic-organization-id': '474b9616-7b17-4b66-90cf-98eac8f67864',
+      'cf-cache-status': 'DYNAMIC',
+      'cf-ray': '9da2c9ac0ae1b6ae-TXL',
+      connection: 'keep-alive',
+      'content-encoding': 'gzip',
+      'content-security-policy': "default-src 'none'; frame-ancestors 'none'",
+      'content-type': 'application/json',
+      date: 'Tue, 10 Mar 2026 13:50:19 GMT',
+      'request-id': 'req_011CYuWNpz1tvLvT5M4feEkg',
+      server: 'cloudflare',
+      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+      'transfer-encoding': 'chunked',
+      vary: 'Accept-Encoding',
+      'x-envoy-upstream-service-time': '228',
+      'x-robots-tag': 'none',
+      'x-should-retry': 'false'
+    },
+    responseBody: '{"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CYuWNpz1tvLvT5M4feEkg"}',
+    isRetryable: false,
+    data: { type: 'error', error: [Object] }
+  }
+}
+ POST /api/chat 200 in 1259ms
+ ✓ Compiled in 203ms
