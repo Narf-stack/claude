@@ -27,9 +27,6 @@ We can write hooks by hand in these files or use the `/hooks` cmd inside Claude 
 
 
 ## Configuration 
-
-
-
 ### PreToolUse Hooks
 
 `PreToolUse` hooks run before a tool is executed. They include a matcher that specifies which tool types to target:
@@ -47,10 +44,9 @@ We can write hooks by hand in these files or use the `/hooks` cmd inside Claude 
 ]
 ``` 
 
-Before the `Read` tool is executed, this configuration runs the specified command. Your command receives details about the tool call Claude wants to make, and you can:
-
-Allow the operation to proceed normally
-Block the tool call and send an error message back to Claude
+Before the `Read` tool is executed, this configuration runs the specified command. The command receives details about the tool call Claude wants to make, and we can:
+- Allow the operation to proceed normally
+- Block the tool call and send an error message back to Claude
 <br/>
 
 ### PostToolUse Hooks
@@ -72,9 +68,8 @@ Block the tool call and send an error message back to Claude
 ``` 
 
 Since the tool call has already occurred, PostToolUse hooks can't block the operation. However, they can:
-
-Run follow-up operations (like formatting a file that was just edited)
-Provide additional feedback to Claude about the tool use
+- Run follow-up operations (like formatting a file that was just edited)
+- Provide additional feedback to Claude about the tool use
 
 
 
@@ -89,3 +84,21 @@ Provide additional feedback to Claude about the tool use
   > - Validation - Check naming conventions or coding standards
 
 PreToolUse hooks give control over what Claude can do, while PostToolUse hooks let us enhance what Claude has done.
+
+
+
+> [!IMPORTANT]  
+> Security Best Practices for writing more secure hooks:
+  > - Validate and sanitize inputs - Never trust input data blindly
+  > - Always quote shell variables - Use "$VAR" not $VAR
+  > - Block path traversal - Check for .. in file paths
+  > - Use absolute paths - Specify full paths for scripts
+  > - Skip sensitive files - Avoid .env, .git/, keys, etc.
+
+
+
+## Disabled hook 
+To disable a hook, we can add the following code at the begining of the hook definition
+```bash
+process.exit(0) 
+``` 

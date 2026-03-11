@@ -33,5 +33,6 @@ Global md file
 
 
 # Hooks
-- see the [file](./list/hooks.md).
+- see the [intro](./list/hooks/intro.md).
+- see the [usefull](./list/hooks/useful.md).
 
