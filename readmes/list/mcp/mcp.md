@@ -68,7 +68,7 @@ For now, only evaluate visual styling aspects. We don't want components generate
 The ecosystem includes servers for:
 
 - Database interactions : Supabase 
-- Dev workflows	: GitHub, Supabase, Figma
+- Dev workflows	: [GitHub](./github.md), Supabase, Figma
 - API testing and monitoring
 - Doc : Context7
 - File system operations

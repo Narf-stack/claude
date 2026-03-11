@@ -29,5 +29,5 @@ Global md file
 - see the [file](./list/claudecommand.md).
 
 # MCP server
-- see the [file](./list/mcp.md).
+- see the [file](./list/mcp/mcp.md).
 
