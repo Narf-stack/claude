@@ -31,3 +31,7 @@ Global md file
 # MCP server
 - see the [file](./list/mcp/mcp.md).
 
+
+# Hooks
+- see the [file](./list/hooks.md).
+
