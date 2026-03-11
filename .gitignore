@@ -24,6 +24,8 @@ uigen/.next/
 # production
 uigen/build
 
+uigen/post-log.json
+uigen/pre-log.json
 # misc
 uigen/.DS_Store
 uigen/.playwright-mcp

@@ -1,12 +1,13 @@
 {
-  "session_id": "610f91d1-a910-4141-804d-554e411a1854",
-  "transcript_path": "/Users/frantz/.claude/projects/-Users-frantz-Documents-claude-uigen/610f91d1-a910-4141-804d-554e411a1854.jsonl",
+  "session_id": "e283fd7c-9cb0-4a06-9390-cabf08f85261",
+  "transcript_path": "/Users/frantz/.claude/projects/-Users-frantz-Documents-claude-uigen/e283fd7c-9cb0-4a06-9390-cabf08f85261.jsonl",
   "cwd": "/Users/frantz/Documents/claude/uigen",
   "permission_mode": "default",
   "hook_event_name": "PreToolUse",
-  "tool_name": "Read",
+  "tool_name": "ToolSearch",
   "tool_input": {
-    "file_path": "/Users/frantz/Documents/claude/uigen/.env"
+    "query": "claude-code-guide",
+    "max_results": 1
   },
-  "tool_use_id": "toolu_01QZd7qs9euwW45cutqX9xCX"
+  "tool_use_id": "toolu_011zu7gZA32eh97bxvEFFSB2"
 }
