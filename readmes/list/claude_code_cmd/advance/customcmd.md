@@ -2,19 +2,22 @@
 <br/>
 
 We can create custom commands to automate repetitive tasks that run frequently.
+<br/>
+<br/>
 
 ### Standard creation
+<br/>
 
 To create a custom command, we need to set up a specific folder structure in our project:
 
-1 - Find the `.claude` folder
-2 - Create a new directory called `commands` inside it
-3 - Create a new markdown file with the desired command name (ex, `audit.md`)
+1. Find the `.claude` folder
+2. Create a new directory called `commands` inside it
+3. Create a new markdown file with the desired command name (ex, `audit.md`)
     The filename becomes the command name - so `audit.md` creates the `/audit` command.
 <br/>
 
-Example: Audit Command
-audit project dependencies for vulnerabilities:
+Example: Audit Command\
+Audit project dependencies for vulnerabilities:
 
 This audit command does three things:
 > - Runs `npm audit` to find vulnerable installed packages
@@ -23,8 +26,10 @@ This audit command does three things:
 
 After creating the file, restart Claude Code.
 <br/>
+<br/>
 
 ### Commands with Arguments
+<br/>
 
 Custom commands can accept arguments using the `$ARGUMENTS` placeholder. 
 For example, a `write_tests.md` command might contain:

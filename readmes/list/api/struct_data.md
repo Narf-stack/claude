@@ -18,7 +18,7 @@ This technique works by:
 The user message tells Claude what to generate.\
 The `prefilled assistant` message makes Claude think it already started a markdown code block
 Claude continues by writing just the JSON content.\
-When Claude tries to close the code block with ```, the stop sequence immediately ends generation.\
+When Claude tries to close the code block with ```, the stop sequence immediately ends generation.
 
 The result is clean JSON with no extra formatting:
 ```bash

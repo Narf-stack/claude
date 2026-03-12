@@ -21,8 +21,10 @@ This hook works for any typed language where we can run a type checker. For unty
 <br/>
 In larger projects with many database queries, Claude sometimes creates duplicate functionality instead of reusing existing code.
 
-Ex: 
-> consider a project structure with multiple query files, each containing many SQL functions. When you ask Claude to "create a Slack integration that alerts about orders pending longer than 3 days," it might write a new query instead of using the existing getPendingOrders() function.
+<ins>Example : </ins>
+> consider a project structure with multiple query files, each containing many SQL functions.\
+
+ When you ask Claude to "create a Slack integration that alerts about orders pending longer than 3 days," it might write a new query instead of using the existing `getPendingOrders()` function.
 
 
 
