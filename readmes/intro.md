@@ -25,14 +25,18 @@ Global md file
 
 
 
-# CLAUDE command
-- see the [file](./list/claudecommand.md).
+# CLAUDE code
+- see the [Claude Code](./list/claudecode.md).
+
+# Claude API 
+- see the [Claude API](./list/hooks/intro.md).
 
 # MCP server
 - see the [file](./list/mcp/mcp.md).
 
-
 # Hooks
 - see the [intro](./list/hooks/intro.md).
 - see the [usefull](./list/hooks/useful.md).
+
+
 
