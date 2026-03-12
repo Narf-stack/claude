@@ -12,14 +12,15 @@ To use claude code for free we can dowload a model on our laptop
 
 <br/>
 
-1. Install Ollama\
+1. **Install Ollama**\
 Head to the Ollama website and download it. 
 ```bash
 https://ollama.com/
 ``` 
 open the Ollama widget, go in settings and change the context length to 32 k
+<br/>
 
-2. Download a Model
+2. **Download a Model**\
 In terminal run:
 ```bash
 ollama run gpt-oss:(size)
@@ -28,15 +29,18 @@ ollama run gpt-oss:(size)
 Replace (size) with model version for `gpt-oss`. 
 Or browse all available models and pick one
 
+<br/>
 
-3. Install Claude Code
+3. **Install Claude Code**\
 ```bash
 curl -fsSL https://claude.ai/install.sh | sh
 ``` 
 
 After that, typing claude in your terminal should fire it up.
 
-4. Connect Claude Code to the model 
+<br/>
+
+4. **Connect Claude Code to the model**\  
 In the app folder, lauch  
 
 
@@ -46,6 +50,8 @@ export ANTHROPIC_BASE_URL=http://localhost:11434
 
 ollama launch claude --config
 ```
+<br/>
+
 And select the downloaded model.
 
 or if you already know the model you would like to use, use its name. 
@@ -62,7 +68,6 @@ ollama launch claude --model qwen3-coder:30b
 <br/>
 
 See the models dowloaded 
-
 ```bash
 ollama list 
 ```
