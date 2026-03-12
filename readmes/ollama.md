@@ -12,7 +12,7 @@ To use claude code for free we can dowload a model on our laptop
 
 <br/>
 
-1. Install Ollama
+1. Install Ollama\
 Head to the Ollama website and download it. 
 ```bash
 https://ollama.com/
