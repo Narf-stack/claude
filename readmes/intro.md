@@ -23,25 +23,27 @@ Global md file
 > - will contains instruction applied for all project 
 > - keep personal instructions and customization for claude
 
+<br/>
+<br/>
+<br/>
 
 
 # Chapters
 <br/>
-<br/>
 
-## CLAUDE code
+### CLAUDE code
 - see the [Claude Code](./list/claudecode.md).
 <br/>
 
-## Claude API 
+### Claude API 
 - see the [Claude API](./list/hooks/intro.md).
 <br/>
 
-## MCP server
-- see the [file](./list/mcp/mcp.md).
+### MCP server
+- see the [MCP Server](./list/mcp/mcp.md).
 <br/>
 
-## Hooks
+### Hooks
 - see the [intro](./list/hooks/intro.md).
 - see the [usefull](./list/hooks/useful.md).
 
