@@ -36,6 +36,8 @@ The result is clean JSON with no extra formatting:
 <br/>
 
 ## Processing the Response
+<br/>
+
 You might notice some extra newline characters in the response. These are easy to handle:
 
 ```bash
@@ -44,14 +46,19 @@ import json
 # Clean up and parse the JSON
 clean_json = json.loads(text.strip())
 ``` 
+<br/>
+<br/>
+<br/>
 
-Beyond JSON
+## Beyond JSON
+<br/>
+
 This technique isn't limited to JSON generation. Use it anytime you need structured data without commentary:
 
-> Python code snippets
-> Bulleted lists
-> CSV data
+> - Python code snippets
+> - Bulleted lists
+> - CSV data
 
 <br/>
-\
+
 The key is identifying what Claude naturally wants to wrap your content in, then using that as the prefill and stop sequence. For code, it's usually markdown code blocks. For lists, it might be different formatting markers.
