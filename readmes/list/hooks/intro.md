@@ -1,5 +1,6 @@
 # Hooks
 
+<br/>
 
 Hooks allow us to run commands before or after Claude attempts to run a tool. 
 Useful for :
@@ -7,8 +8,11 @@ Useful for :
   - executing tests when files change
   - blocking access to specific files
 
+<br/>
+<br/>
 
 ## How Hooks Work
+<br/>
 
 There are two types of hooks:
 
@@ -24,10 +28,16 @@ Hooks are defined in Claude settings files. We can add them to:
 
 We can write hooks by hand in these files or use the `/hooks` cmd inside Claude Code.
 
+<br/>
+<br/>
 
 
 ## Configuration 
+<br/>
+<br/>
+
 ### PreToolUse Hooks
+<br/>
 
 `PreToolUse` hooks run before a tool is executed. They include a matcher that specifies which tool types to target:
 ```bash
@@ -72,6 +82,7 @@ Since the tool call has already occurred, PostToolUse hooks can't block the oper
 - Provide additional feedback to Claude about the tool use
 
 
+<br/>
 
 
 > [!NOTE]
@@ -85,6 +96,7 @@ Since the tool call has already occurred, PostToolUse hooks can't block the oper
 
 PreToolUse hooks give control over what Claude can do, while PostToolUse hooks let us enhance what Claude has done.
 
+<br/>
 
 
 > [!IMPORTANT]  
@@ -96,8 +108,12 @@ PreToolUse hooks give control over what Claude can do, while PostToolUse hooks l
   > - Skip sensitive files - Avoid .env, .git/, keys, etc.
 
 
+<br/>
+<br/>
 
 ## Disabled hook 
+<br/>
+
 To disable a hook, we can add the following code at the begining of the hook definition
 ```bash
 process.exit(0) 

@@ -25,7 +25,7 @@ Temperature is a decimal value between 0 and 1 that directly influences these se
 <br/>
 
 
-![Impact of temperature](../../../img/temp-evol.png)
+![Impact of temperature](../../img/temp-evol.png)
 <br/>
 <br/>
 
@@ -33,4 +33,4 @@ Temperature is a decimal value between 0 and 1 that directly influences these se
 ## Choosing the Right Temperature
 <br/>
 
-![Temperature ranges](../../../img/temp.png)
+![Temperature ranges](../../img/temp.png)
