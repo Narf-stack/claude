@@ -60,12 +60,12 @@ We can use the SDK's simplified streaming interface that extracts just the text 
 
 ```bash
 with client.messages.stream(
-    model=model,
-    max_tokens=1000,
-    messages=messages
+  model=model,
+  max_tokens=1000,
+  messages=messages
 ) as stream:
     for text in stream.text_stream:
-      print(text, end="")
+    print(text, end="")
 ``` 
 
 This approach automatically filters out everything except the actual text content
@@ -77,17 +77,21 @@ This approach automatically filters out everything except the actual text conten
 ## Getting the Complete Message
 <br/>
 
-While streaming individual chunks is great for user experience, you often need the complete message for storage or further processing. After streaming completes, you can get the assembled final message:
+While streaming individual chunks is great for user experience, we still need the complete message for storage or further processing. After streaming completes, we can get the assembled final message:
 
+```bash
 with client.messages.stream(
-    model=model,
-    max_tokens=1000,
-    messages=messages
+  model=model,
+  max_tokens=1000,
+  messages=messages
 ) as stream:
     for text in stream.text_stream:
-        # Send each chunk to your client
-        pass
+      # Send each chunk to your client
+      # print(text, end="")
+      pass
     
     # Get the complete message for database storage
     final_message = stream.get_final_message()
-This gives you the best of both worlds: real-time streaming for users and a complete message object for your application logic.
+``` 
+
+This gives the best of both worlds: real-time streaming for users and a complete message object for the storage.

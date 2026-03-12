@@ -6,7 +6,6 @@
 
 <br/>
 <br/>
-<br/>
 
 # Advance Concepts
 <br/>

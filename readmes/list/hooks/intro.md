@@ -34,7 +34,6 @@ We can write hooks by hand in these files or use the `/hooks` cmd inside Claude 
 
 ## Configuration 
 <br/>
-<br/>
 
 ### PreToolUse Hooks
 <br/>

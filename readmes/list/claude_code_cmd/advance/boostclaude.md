@@ -4,6 +4,8 @@
 The more complex the task, the more research Claude will have to do. To boost Claude IQ we can either enter in `Planning mode`, `Thinking modes` or both together for very complex tasks.
 Both options consume a fair ammout of tokens. 
 <br/>
+<br/>
+
 
 ### Planning mode
 we can enable it with
@@ -18,6 +20,7 @@ Useful when the task requires :
   - a wide understanding of the code base, and looking at different area
   - several steps to be completed  
 
+<br/>
 <br/>
 
 ### Thinking modes
@@ -43,7 +46,7 @@ Useful when the task :
 # More thinking
 ``` 
 
-For instance we can simplys say 
+For instance we can simply say 
 ```bash
 This is a tough task so ultrathink about the best way to implement it
 ``` 

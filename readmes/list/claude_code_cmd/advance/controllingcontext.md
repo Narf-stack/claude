@@ -2,12 +2,14 @@
 ## Controlling Context
 Controlling and directin the flow of conversation
 <br/>
+<br/>
 
 ### Interrupt Claude
 ```bash
 Escape
 ``` 
 Interrupt Claude, allowing us to redirect or correct it. Also useful to fix issues with `#` memories.
+<br/>
 <br/>
 
 ### Repetetive error
@@ -24,6 +26,7 @@ Escape
 "# vitest config file is in vitest.config.mts"
 ``` 
 <br/>
+<br/>
 
 ### Rewind a Conversation
 Revert to a previous message
@@ -34,6 +37,7 @@ Escape + Escape
 It will show us all the previously sent messages.
 Removes context not relevant to the current task
 <br/>
+<br/>
 
 ### Focus
 Summarize the conversation and continue. Very useful when Claude has learned a lot about the current task.
@@ -41,6 +45,7 @@ Summarize the conversation and continue. Very useful when Claude has learned a l
 /compact
 ``` 
 Helps Claude stay focused but remember what it has learned in the current session.
+<br/>
 <br/>
 
 ### Cleaning
@@ -60,24 +65,29 @@ Useful when switching between different tasks, or after having a long run conver
 <br/>
 
 We can create custom commands to automate repetitive tasks that run frequently.
+<br/>
+<br/>
 
 ### Standard creation
 
 To create a custom command, we need to set up a specific folder structure in our project:
 
-1 - Find the `.claude` folder
-2 - Create a new directory called `commands` inside it
-3 - Create a new markdown file with the desired command name (ex, `audit.md`)
+1. Find the `.claude` folder
+2. Create a new directory called `commands` inside it
+3. Create a new markdown file with the desired command name (ex, `audit.md`)
     The filename becomes the command name - so `audit.md` creates the `/audit` command.
 <br/>
+<br/>
 
-Example: Audit Command
-audit project dependencies for vulnerabilities:
+<ins>Example</ins>: **Audit Command**
+<br/>
+
+Audit project dependencies for vulnerabilities:
 
 This audit command does three things:
-> - Runs `npm audit` to find vulnerable installed packages
-> - Runs `npm audit fix` to apply updates
-> - Runs `tests` to verify the updates didn't break anything
+> Runs `npm audit` to find vulnerable installed packages
+> Runs `npm audit fix` to apply updates
+> Runs `tests` to verify the updates didn't break anything
 
 After creating the file, restart Claude Code.
 <br/>

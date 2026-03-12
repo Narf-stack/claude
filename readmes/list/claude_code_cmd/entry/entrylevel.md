@@ -33,6 +33,7 @@ Claude can create our PR. it will save our changes and write a valuable commit m
 stage and commit changes
 ```
 <br/>
+<br/>
 
 ## Screenshot 
 To paste a screenshot in claude code use 
@@ -41,15 +42,16 @@ To paste a screenshot in claude code use
 CTRL + v 
 ```
 <br/>
+<br/>
 
 ## File mention
 use the `@` + path of the file 
 
 ```bash
-How does the auth system work ?
-@src/component/auth.tsx
+How does the auth system work in the file @src/component/auth.tsx
 ```
 By mentionning a file we help claude to go straigth away in the right place instead of scrolling the through the code base
+<br/>
 <br/>
 
 ## Memory mode 
@@ -65,8 +67,3 @@ Type :
 and then select the file we want to add this new rules to  
 
 Or update the claude.md manualy 
-
-<br/>
-<br/>
-<br/>
-

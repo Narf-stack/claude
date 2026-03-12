@@ -1,4 +1,4 @@
-# Tempearature
+# Temperature
 
 
 A parameter that controls how predictable or creative Claude's responses will be.
@@ -11,9 +11,9 @@ A parameter that controls how predictable or creative Claude's responses will be
 
 When we send Claude a prompt like "What do you think?", it goes through three key steps:
 
-> - **Tokenization** - Breaking your input into smaller chunks
-> - **Prediction** - Calculating probabilities for possible next words
-> - **Sampling** - Choosing a token based on those probabilities
+> **Tokenization** - Breaking your input into smaller chunks
+> **Prediction** - Calculating probabilities for possible next words
+> **Sampling** - Choosing a token based on those probabilities
 <br/>
 <br/>
 
