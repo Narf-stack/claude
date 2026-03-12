@@ -103,11 +103,10 @@ def chat(messages, stop_sequences=[]):
 We can fine-tune exactly where the stopping occurs. If I want to avoid trailing punctuation, I can use a more specific stop sequence like ", 5" instead of just "5".
 <br/>
 <br/>
-<br/>
 
 ## Practical Applications
 
-> **Consistent formatting:** Use prefilling to ensure responses always start with a specific structure
-> **Controlled length:** Use stop sequences to cap responses at natural breakpoints
-> **Biased responses:** Need Claude to take a particular stance rather than being neutral
-> **Structured output:** Combine both techniques to generate responses that fit specific templates
+> - **Consistent formatting:** Use prefilling to ensure responses always start with a specific structure
+> - **Controlled length:** Use stop sequences to cap responses at natural breakpoints
+> - **Biased responses:** Need Claude to take a particular stance rather than being neutral
+> - **Structured output:** Combine both techniques to generate responses that fit specific templates
