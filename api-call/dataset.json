@@ -1,14 +1,17 @@
 [
   {
-    "task": "Parse an AWS CloudFormation template and extract all resource logical IDs",
-    "format": "python"
+    "task": "Create a JSON configuration file for an AWS Lambda function that processes S3 events, with environment variables for the target bucket name and CloudWatch log retention in days",
+    "format": "json",
+    "solution_criteria": "Must include valid Lambda configuration structure, S3 event trigger definition, environment variables section with bucket name and log retention, and proper JSON syntax"
   },
   {
-    "task": "Validate an AWS IAM policy JSON structure and check for required fields (Version, Statement)",
-    "format": "json"
+    "task": "Write a Python function that takes an AWS S3 object key path (e.g., 's3://my-bucket/folder/file.txt') and returns a dictionary with parsed components: bucket name, folder path, and file name",
+    "format": "python",
+    "solution_criteria": "Function must correctly parse S3 URIs, handle edge cases like missing folders or trailing slashes, return a dict with 'bucket', 'folder', and 'filename' keys, and handle both s3:// and relative paths"
   },
   {
-    "task": "Extract AWS S3 bucket names from CloudFront distribution logs using a pattern matcher",
-    "format": "regex"
+    "task": "Create a regular expression that validates AWS IAM role ARNs (format: arn:aws:iam::123456789012:role/RoleName) and extracts the AWS account ID and role name",
+    "format": "regex",
+    "solution_criteria": "Regex must match valid IAM role ARNs, reject invalid formats, and support role names with hyphens and underscores; should enable extraction of the 12-digit account ID and role name separately"
   }
 ]
