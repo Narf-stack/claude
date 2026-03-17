@@ -213,14 +213,14 @@ For instance, if we're asking Claude to analyze why a sales team's performance d
 <br/>
 
 
-## Structure with XML tags
+### Structure with XML tags
 <br/>
 
 XML tags provide a simple way to add structure and clarity to the prompts, especially when we're interpolating large amounts of data.
 <br/>
 <br/>
 
-### Structure Matters
+#### Structure Matters
 Consider a prompt where you need to analyze 20 pages of sales records.  
 
 By wrapping the sales records in XML tags like <sales_records> and </sales_records>, we create clear delimiters that help Claude understand the structure of your prompt.
@@ -235,7 +235,7 @@ The `Not Great` version makes it nearly impossible to tell what's code versus do
 <br/>
 <br/>
 
-### Custom Tag Names
+#### Custom Tag Names
 
 Create descriptive names that make sense for the content:
 
@@ -248,7 +248,7 @@ The more specific and descriptive the tag names, the better Claude can understan
 <br/>
 <br/>
 
-### When to Use XML Tags
+#### When to Use XML Tags
 <br/>
 
 XML tags are most useful when:
@@ -262,7 +262,7 @@ XML tags are most useful when:
 <br/>
 <br/>
 
-### Real-World Application
+#### Real-World Application
 <br/>
 
 In practice, we might structure a prompt like this:
@@ -279,3 +279,102 @@ In practice, we might structure a prompt like this:
 ``` 
 
 This makes it crystal clear that the height, weight, goal, and restrictions are all related athlete data that should be considered together when generating the meal plan.
+
+
+<br/>
+<br/>
+<br/>
+
+
+
+### Providing examples
+
+<br/>
+
+Providing examples in the prompts is one of the most effective techniques. This approach, known as "one-shot" or "multi-shot" prompting, involves giving Claude sample input/output pairs to guide its responses.
+
+<br/>
+<br/>
+
+#### How Examples Work
+<br/>
+
+Say we want Claude to categorize whether a tweet is positive or negative.
+The challenge here is sarcasm. A tweet like "Yeah, sure, that was the best movie I've seen since 'Plan 9 from Outer Space'" appears positive on the surface, but it's actually sarcastic and negative (Plan 9 is famously one of the worst movies ever made).
+
+To solve this, you can add examples that show Claude how to handle tricky cases:
+
+![sarcasm](../../img/sarcasm.png)
+
+
+The improved prompt includes:
+
+> - A clear positive example: "Great game tonight!" → "Positive"
+> - A sarcastic example: "Oh yeah, I really needed a flight delay tonight! Excellent!" → "Negative"
+> - Context explaining why sarcasm should be treated carefully
+<br/>
+<br/>
+ 
+#### When to Use Examples
+Examples are particularly useful for:
+<br/>
+
+> - Capturing corner cases or edge scenarios
+> - Defining complex output formats (like specific JSON structures)
+> - Showing the exact style or tone you want
+> - Demonstrating how to handle ambiguous inputs
+
+
+#### One-Shot vs Multi-Shot
+<br/>
+
+<ins>One-Shot</ins>
+<br/>
+
+Provide a single example to establish the pattern
+<br/>
+<br/>
+
+<ins>Multi-Shot</ins>
+<br/>
+Provide multiple examples to cover different scenarios
+<br/>
+
+Multi-shot is sueful when we handle various edge cases or want to show different types of valid responses.
+<br/>
+<br/>
+
+
+#### Finding Good Examples from Evaluations
+<br/>
+
+When running prompt evaluations, look for the highest-scoring outputs in the `output.html` to use as examples.
+This helps Claude understand what a `perfect` output looks like for our specific use case.
+<br/>
+<br/>
+
+#### Adding Context to Examples
+It is also better to explain why the output is good:
+
+```bash
+  <ideal_output>
+  [ example output here]
+  </ideal_output>
+
+  This example is well-structured, provides detailed information 
+  on food choices and quantities, and aligns with the athlete's 
+  goals and restrictions.
+```
+
+This helps Claude understand the reasoning behind good responses, not just the format.
+<br/>
+<br/>
+<br/>
+
+> [!NOTE]
+> Best Practices :
+> - Always use XML tags to structure the examples clearly
+> - Be explicit about what we're showing: "Here is an example input with an ideal response"
+> - Include examples that address the most common failure cases
+> - Explain why the example outputs are considered ideal
+> - Keep examples relevant to the task
