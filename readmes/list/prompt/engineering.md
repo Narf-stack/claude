@@ -148,3 +148,64 @@ focus on how we structure the request:
 > - Use instructions, not questions
 > - Start with direct action verbs like "Write," "Create," or "Generate"
 > - Rather than asking "I was reading about renewable energy and geothermal energy sounds neat. What countries use it?" try: "Identify three countries that use geothermal energy. Include generation stats for each.
+
+<br/>
+<br/>
+<br/>
+
+
+### Being specific
+<br/>
+
+Provide clear guidelines or steps that direct the model toward the kind of output we're looking for.
+By adding specific guidelines, we share a clearer target to aim for. This dramatically improves both the consistency and quality of the output.
+
+<br/>
+<br/>
+
+***<ins>Two Types of Guidelines</ins>***
+<br/>
+
+`Output Quality Guidelines`
+
+List qualities that the output should have. 
+These guidelines help to control:
+
+> - Length of the response
+> - Structure and format
+> - Specific attributes or elements to include
+> - Tone or style requirements
+<br/>
+ 
+`Process Steps`
+Provide specific steps for Claude to follow. 
+
+For example, writing a story.
+Instead of jumping straight to writing, we might ask Claude to:
+
+> - Brainstorm three talents that would create dramatic tension
+> - Pick the most interesting talent
+> - Outline a pivotal scene that reveals the talent
+> - Brainstorm supporting character types that could increase the impact
+
+
+Guidelines:
+1. Include accurate daily calorie amount
+2. Show protein, fat, and carb amounts  
+3. Specify when to eat each meal
+4. Use only foods that fit restrictions
+5. List all portion sizes in grams
+6. Keep budget-friendly if mentioned
+
+### When to Use Each Approach
+
+- Always Use Output Guidelines
+- Use Process Steps For Complex Problems
+
+Add step-by-step instructions when deals with:
+> - Troubleshooting complex problems
+> - Decision-making scenarios
+> - Critical thinking tasks
+> - Any situation where Claude should consider multiple angles
+
+For instance, if we're asking Claude to analyze why a sales team's performance dropped, we'd want to guide it through examining market metrics, industry changes, individual performance, organizational changes, and customer feedback - rather than letting it focus on just one potential cause.
