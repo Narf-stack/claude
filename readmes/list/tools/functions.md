@@ -1,5 +1,20 @@
 
-## What Are Tool Functions?
+
+## Lyfe cycle 
+
+```bash
+  Write a tool function
+        ↓
+  Write a JSON schema
+        ↓
+Call Claude with the Json Schema 
+         ↓
+      Run tool
+         ↓
+Add tool result and call Claude again
+``` 
+
+## Tool Functions
 <br/>
 
 A tool function is a plain Python function that gets executed automatically when Claude decides it needs extra information to help a us. For example, if we ask "What time is it?", Claude would call our `date/time` tool to get the current time.
@@ -15,7 +30,7 @@ Here's an example of a weather tool function.
 <br/>
 <br/>
 
-## Best Practices for Tool Functions
+### Best Practices for Tool Functions
 <br/>
 
 
@@ -29,3 +44,13 @@ The validation is particularly important because Claude learns from errors. If w
 <br/>
 <br/>
 
+## JSON Schema
+
+Used to informed Claude about the different existing tools (i.e, Doc) 
+The complete tool specification has three main parts:
+
+> - Name - A clear, descriptive name for your tool (like "get_weather")
+> - Description - What the tool does, when to use it, and what it returns
+> - Input_schema - The actual JSON schema describing the function's arguments
+
+![Json Schema](../../img/json.png)
