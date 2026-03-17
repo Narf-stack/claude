@@ -187,25 +187,95 @@ Instead of jumping straight to writing, we might ask Claude to:
 > - Pick the most interesting talent
 > - Outline a pivotal scene that reveals the talent
 > - Brainstorm supporting character types that could increase the impact
+<br/>
+<br/>
 
-
-Guidelines:
-1. Include accurate daily calorie amount
-2. Show protein, fat, and carb amounts  
-3. Specify when to eat each meal
-4. Use only foods that fit restrictions
-5. List all portion sizes in grams
-6. Keep budget-friendly if mentioned
 
 ### When to Use Each Approach
+<br/>
 
 - Always Use Output Guidelines
 - Use Process Steps For Complex Problems
+<br/>
 
 Add step-by-step instructions when deals with:
 > - Troubleshooting complex problems
 > - Decision-making scenarios
 > - Critical thinking tasks
 > - Any situation where Claude should consider multiple angles
+<br/>
 
 For instance, if we're asking Claude to analyze why a sales team's performance dropped, we'd want to guide it through examining market metrics, industry changes, individual performance, organizational changes, and customer feedback - rather than letting it focus on just one potential cause.
+
+
+<br/>
+<br/>
+<br/>
+
+
+## Structure with XML tags
+<br/>
+
+XML tags provide a simple way to add structure and clarity to the prompts, especially when we're interpolating large amounts of data.
+<br/>
+<br/>
+
+### Structure Matters
+Consider a prompt where you need to analyze 20 pages of sales records.  
+
+By wrapping the sales records in XML tags like <sales_records> and </sales_records>, we create clear delimiters that help Claude understand the structure of your prompt.
+
+
+<ins>Practical Example: Code and Documentation</ins>
+If we ask Claude to debug code using provided documentation, mixing everything together creates confusion:
+
+![code](../../img/code_xml.png)
+
+The `Not Great` version makes it nearly impossible to tell what's code versus documentation. The `Better` version uses <my_code> and <docs> tags to create clear boundaries.
+<br/>
+<br/>
+
+### Custom Tag Names
+
+Create descriptive names that make sense for the content:
+
+> - <sales_records> is better than <data>
+> - <athlete_information> clearly identifies user details
+> - <my_code> and <docs> separate different types of content
+
+The more specific and descriptive the tag names, the better Claude can understand the purpose of each section.
+<br/>
+<br/>
+<br/>
+
+### When to Use XML Tags
+<br/>
+
+XML tags are most useful when:
+
+> - Including large amounts of context or data
+> - Mixing different types of content (code, documentation, data)
+> - To be extra clear about content boundaries
+> - Working with complex prompts that interpolate multiple variables
+> - Make prompt structure more obvious to Claude.
+<br/>
+<br/>
+<br/>
+
+### Real-World Application
+<br/>
+
+In practice, we might structure a prompt like this:
+
+```bash
+  <athlete_information>
+  - Height: 6'2"
+  - Weight: 180 lbs
+  - Goal: Build muscle
+  - Dietary restrictions: Vegetarian
+  </athlete_information>
+
+  Generate a meal plan based on the athlete information above.
+``` 
+
+This makes it crystal clear that the height, weight, goal, and restrictions are all related athlete data that should be considered together when generating the meal plan.
