@@ -1,4 +1,4 @@
-
+# Prompt evaluation
 
 
 
@@ -6,6 +6,7 @@ A typical prompt evaluation workflow follows five key steps that help systematic
 
 ![Prompt eval](../img/prompt-eval.png)
 
+<br/>
 
 ### Feed through claude 
 The evaluation process follows a clear workflow:
@@ -15,11 +16,15 @@ The evaluation process follows a clear workflow:
 - evaluate the output using a grader system.
 
 
+<br/>
+<br/>
 
 
 ## Graders
 
-### Types  
+### Types
+<br/>
+
 There are three different type of graders
 
 ![Grader](../img/grader.png)
@@ -29,8 +34,12 @@ There are three different type of graders
 - **Code graders**, programmatically evaluate outputs using custom logic
 - **Model graders**, use another AI model to assess the quality
 - **Human graders**, manually reviewed and scored outputs by humans
+<br/>
+<br/>
 
 ### Code Graders
+<br/>
+
 <ins>Common uses: </ins>
 
 > - Checking output length
@@ -39,8 +48,12 @@ There are three different type of graders
 > - Readability scores
 
 The only requirement is that the code returns some usable signal - usually a number between 1 and 10.
+<br/>
+<br/>
 
 #### Model Graders
+<br/>
+
 Feed the original output into another API call for evaluation. 
 
 Offers flexibility for assessing : 
@@ -49,9 +62,12 @@ Offers flexibility for assessing :
 > - Completeness
 > - Helpfulness
 > - Safety
+<br/>
+<br/>
 
 
 ### Human Graders
+<br/>
 
 The most flexibility but are time-consuming and tedious. 
 Useful for evaluating:
@@ -62,9 +78,12 @@ Useful for evaluating:
 > - Conciseness
 > - Relevance
 
+<br/>
+<br/>
 
 
 ### Defining Evaluation Criteria
+<br/>
 
 `How will we know if the prompt is producing good outputs ?`
 Before implementing any grader, we need clear evaluation criteria. 

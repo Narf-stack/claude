@@ -1,17 +1,48 @@
 [
   {
-    "task": "Create a JSON configuration file for an AWS Lambda function that processes S3 events, with environment variables for the target bucket name and CloudWatch log retention in days",
-    "format": "json",
-    "solution_criteria": "Must include valid Lambda configuration structure, S3 event trigger definition, environment variables section with bucket name and log retention, and proper JSON syntax"
+    "prompt_inputs": {
+      "height": "170 cm",
+      "weight": "68 kg",
+      "goal": "maintain weight while optimizing muscle definition for competition",
+      "restrictions": "none"
+    },
+    "solution_criteria": [
+      "Meal plan totals 1,800-2,000 calories with protein comprising 35-40% of daily intake",
+      "All meals feature lean protein sources (chicken breast, fish, eggs, Greek yogurt) with controlled portion sizes",
+      "Plan is presented in compact format covering breakfast, lunch, dinner, and one snack with clear portion weights"
+    ],
+    "task_description": "Write a compact,concise 1 day meal plan for an athlete",
+    "scenario": "Testing with a weight-sensitive sport (e.g., boxer or gymnast) requiring calorie-controlled portions and lean protein emphasis, verifying the plan balances nutrition density with controlled portions"
   },
   {
-    "task": "Write a Python function that takes an AWS S3 object key path (e.g., 's3://my-bucket/folder/file.txt') and returns a dictionary with parsed components: bucket name, folder path, and file name",
-    "format": "python",
-    "solution_criteria": "Function must correctly parse S3 URIs, handle edge cases like missing folders or trailing slashes, return a dict with 'bucket', 'folder', and 'filename' keys, and handle both s3:// and relative paths"
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "72 kg",
+      "goal": "muscle gain",
+      "restrictions": "vegetarian, tree nut allergy, gluten-free"
+    },
+    "solution_criteria": [
+      "Meal plan is compact and covers one full day with breakfast, lunch, dinner, and snacks",
+      "All meals are vegetarian and free from tree nuts and gluten",
+      "Provides adequate protein (minimum 1.6g per kg body weight) to support muscle gain goals",
+      "Meals are practical and concise without excessive detail or preparation complexity"
+    ],
+    "task_description": "Write a compact,concise 1 day meal plan for an athlete",
+    "scenario": "Testing with multiple dietary restrictions (e.g., vegetarian athlete with nut allergies) to ensure the meal plan accommodates constraints while maintaining athletic performance nutrition"
   },
   {
-    "task": "Create a regular expression that validates AWS IAM role ARNs (format: arn:aws:iam::123456789012:role/RoleName) and extracts the AWS account ID and role name",
-    "format": "regex",
-    "solution_criteria": "Regex must match valid IAM role ARNs, reject invalid formats, and support role names with hyphens and underscores; should enable extraction of the 12-digit account ID and role name separately"
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "marathon endurance training",
+      "restrictions": "none"
+    },
+    "solution_criteria": [
+      "Meal plan contains 4-5 meals/snacks optimized for high carbohydrate intake (55-65% of calories)",
+      "Total daily calories align with endurance athlete needs (~2,800-3,200 kcal for 68kg runner)",
+      "Plan is presented in compact, easy-to-scan format suitable for 1-day reference"
+    ],
+    "task_description": "Write a compact,concise 1 day meal plan for an athlete",
+    "scenario": "Testing with a specific sport discipline (e.g., marathon runner) requiring high carbohydrate intake and specific caloric targets, verifying the meal plan prioritizes endurance nutrition"
   }
 ]
