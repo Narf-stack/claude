@@ -1,0 +1,63 @@
+[
+  {
+    "prompt_inputs": {
+      "format": "png",
+      "subject": "nostalgia mixed with melancholy",
+      "influence": "cool blues and warm oranges with fragmented geometric shapes",
+      "inspiration": "memories of a distant past, faded photographs, broken mirrors reflecting different time periods"
+    },
+    "solution_criteria": [
+      "Image successfully combines cool blue and warm orange color palette throughout the composition",
+      "Abstract design incorporates fragmented geometric shapes (triangles, rectangles, circles) as primary visual elements",
+      "Overall visual composition evokes the emotional qualities of nostalgia and melancholy through color interaction and form arrangement"
+    ],
+    "task_description": "For a artistic project, create an abstract image based on the following inputs",
+    "scenario": "Testing with emotional/sensory inputs: Create an abstract image inspired by the feeling of nostalgia mixed with melancholy, using cool blues and warm oranges with fragmented geometric shapes"
+  },
+  {
+    "prompt_inputs": {
+      "format": "png",
+      "subject": "the passage of time and cyclical renewal",
+      "influence": "Japanese minimalism combined with Art Deco geometric principles",
+      "inspiration": "traditional Japanese textile patterns featuring seasonal motifs and Art Deco's symmetrical geometric compositions"
+    },
+    "solution_criteria": [
+      "Abstract artwork successfully blends Japanese minimalist aesthetics (negative space, simplicity, natural elements) with Art Deco geometric patterns (symmetry, bold lines, stylized forms)",
+      "The subject of cyclical time and renewal is conveyed through visual metaphor rather than literal representation",
+      "Composition demonstrates cultural/historical authenticity by incorporating characteristic design elements from both influences without reducing them to stereotypes"
+    ],
+    "task_description": "For a artistic project, create an abstract image based on the following inputs",
+    "scenario": "Testing with cultural/historical inputs: Generate an abstract artwork inspired by a specific art movement or cultural symbol (e.g., Art Deco, Japanese minimalism, ancient textile patterns) with minimal literal representation"
+  },
+  {
+    "prompt_inputs": {
+      "format": "PNG",
+      "subject": "Jazz music genre",
+      "influence": "Dynamic color gradients with warm oranges, deep blues, and vibrant purples; rhythm-based composition with syncopated visual elements",
+      "inspiration": "The improvisational nature of jazz, with overlapping instrumental layers creating visual harmony through asymmetrical balance and flowing brushstroke-like forms"
+    },
+    "solution_criteria": [
+      "Abstract image successfully conveys the improvisational and dynamic nature of jazz through visual composition",
+      "Color palette uses dynamic gradients with warm and cool tones that reflect jazz aesthetics",
+      "Composition demonstrates rhythm-based visual elements with varied spatial distribution and movement"
+    ],
+    "task_description": "For a artistic project, create an abstract image based on the following inputs",
+    "scenario": "Testing with music-inspired inputs: Create an abstract visual interpretation of a specific music genre (e.g., jazz, electronic, classical) using dynamic color gradients and rhythm-based composition"
+  },
+  {
+    "prompt_inputs": {
+      "format": "png",
+      "subject": "The coexistence of chaos and order in a forest ecosystem",
+      "influence": "Generative art movement combined with biomimicry principles; use a color palette of deep greens, earth browns, and silver accents",
+      "inspiration": "The contrast between organic fractal patterns found in tree branches and root systems versus the geometric regularity of growth rings and forest canopy layers"
+    },
+    "solution_criteria": [
+      "Image contains both organic flowing patterns (representing chaos) and structured grid or geometric elements (representing order)",
+      "Visual composition reflects forest ecosystem elements such as branching structures, layered patterns, or natural growth formations",
+      "Color palette predominantly uses greens, browns, and metallic tones as specified",
+      "Abstract representation is recognizable as nature-inspired without depicting literal realistic forest imagery"
+    ],
+    "task_description": "For a artistic project, create an abstract image based on the following inputs",
+    "scenario": "Testing with nature-based conceptual inputs: Generate an abstract representation of the chaos and order found in a forest ecosystem, combining organic flowing patterns with structured grid elements"
+  }
+]
