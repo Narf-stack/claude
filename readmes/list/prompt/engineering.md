@@ -120,3 +120,31 @@ This helps ensure the prompt is evaluated against the specific requirements that
 After running an evaluation, we get both a numerical score and a detailed HTML report (output.html). The report shows exactly how each test case performed, including the model's reasoning for each score.
 We should use this feedbacks to guide the next iteration.
 
+
+<br/>
+<br/>
+<br/>
+
+
+## Prompt NG techniques 
+
+
+### Being clear and direct
+<br/>
+
+This means using simple language that leaves no room for ambiguity about what we want our model to do.
+<br/>
+
+<ins>Clear Communication</ins>
+
+> - simple language that anyone can understand
+> - State exactly what we want without beating around the bush
+> - Lead with a straightforward statement of Claude's task
+> - Instead of writing something vague about a subject, be direct. For example, about solar pannel write: "Write three paragraphs about how solar panels work."
+
+<ins>Direct Instructions</ins>
+focus on how we structure the request:
+
+> - Use instructions, not questions
+> - Start with direct action verbs like "Write," "Create," or "Generate"
+> - Rather than asking "I was reading about renewable energy and geothermal energy sounds neat. What countries use it?" try: "Identify three countries that use geothermal energy. Include generation stats for each.
