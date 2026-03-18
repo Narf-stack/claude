@@ -78,11 +78,14 @@ response = client.messages.create(
 
 The tools parameter takes a list of JSON schemas that describe the available functions Claude can call.
 
+<br/>
 
 
 ![Tool result block](../../img/toolresultblock.png)
 
 
+<br/>
+<br/>
 
 write a tool function and tool schema
 the tool schema should be added to every request done 
