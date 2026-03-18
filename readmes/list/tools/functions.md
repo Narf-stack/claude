@@ -84,16 +84,28 @@ The tools parameter takes a list of JSON schemas that describe the available fun
 ![Tool result block](../../img/toolresultblock.png)
 
 
+![ToolUseBlock VS ToolResultblock](../../img/use_vs_result_block.png)
+
 <br/>
 <br/>
 
-write a tool function and tool schema
-the tool schema should be added to every request done 
-text block: intented to be dispolay to the user 
-Tool use block include info about tool that claude need to use 
-Tool result block is used to inform Claude about the result of running a tool function
+**Recap**
+<br/>
+
+> - write a tool function and tool schema
+> - the tool schema should be added to every request done 
+> - text block: intented to be dispolay to the user, send from Claude to our server 
+> - Tool use block include info about tool that claude need to use, send from Claude to our server  
+> - Tool result block is used to inform Claude about the result of running a tool function, send from our server to Claude
 
 
 ![full life cycle](../../img/full_recap.png)
 
 
+
+<br/>
+<br/>
+
+Field use by Claude to inform why it decided to generate more text
+
+![full life cycle](../../img/stopuse.png)
