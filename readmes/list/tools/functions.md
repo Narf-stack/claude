@@ -12,7 +12,7 @@ Call Claude with the Json Schema
       Run tool
          ↓
 Add tool result and call Claude again
-``` 
+```  
 
 ## Tool Functions
 <br/>
@@ -54,3 +54,43 @@ The complete tool specification has three main parts:
 > - Input_schema - The actual JSON schema describing the function's arguments
 
 ![Json Schema](../../img/json.png)
+
+
+
+### Making Tool-Enabled API Calls
+To enable Claude to use tools, we need to include a tools parameter in the API call. Here's how to structure the request:
+
+```bash
+
+messages = []
+messages.append({
+  "role": "user",
+  "content": "What is the exact time, formatted as HH:MM:SS?"
+})
+
+response = client.messages.create(
+  model=model,
+  max_tokens=1000,
+  messages=messages,
+  tools=[get_current_datetime_schema],
+)
+``` 
+
+The tools parameter takes a list of JSON schemas that describe the available functions Claude can call.
+
+
+
+![Tool result block](../../img/toolresultblock.png)
+
+
+
+write a tool function and tool schema
+the tool schema should be added to every request done 
+text block: intented to be dispolay to the user 
+Tool use block include info about tool that claude need to use 
+Tool result block is used to inform Claude about the result of running a tool function
+
+
+![full life cycle](../../img/full_recap.png)
+
+
