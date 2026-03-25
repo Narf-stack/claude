@@ -109,3 +109,38 @@ The tools parameter takes a list of JSON schemas that describe the available fun
 Field use by Claude to inform why it decided to generate more text
 
 ![full life cycle](../../img/stopuse.png)
+
+
+
+<br/>
+<br/>
+
+## Fine-Grained Tool Calling
+<br/>
+
+For faster, more granular streaming - perhaps to show users immediate updates or start processing partial results quickly - we can enable `fine-grained` tool calling.
+
+
+`Fine-grained` tool calling does one main thing: it disables JSON validation on the API side. 
+This means:
+
+> - We get chunks as soon as Claude generates them
+> - No buffering delays between top-level keys
+> - More traditional streaming behavior
+
+Enable it by adding fine_grained=True to your API call:
+
+
+```bash
+run_conversation(
+  messages, 
+  tools=[save_article_schema], 
+  fine_grained=True
+)
+```
+
+> [!IMPORTANT]
+> With this option to true, JSON validation is disabled - the backend code must be able to handle invalid JSON
+
+
+With fine-grained tool calling, we might receive a `word_count` value much earlier in the stream, without waiting for the entire meta object to be completed.
