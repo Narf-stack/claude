@@ -21,7 +21,19 @@ We need to analyze whether the benefits outweigh the complexity for the app. It'
 The key insight is that RAG trades simplicity for scalability and efficiency. While it requires more upfront work to implement properly, it enables us to work with document collections that would be impossible to handle with simple prompt stuffing.
 
 
+## Pipeline
 
+```bash
+"Extracting text chuchks from the doc to study" -> Chunking strategie
+   ↓
+""
+   ↓
+""
+   ↓
+""
+   ↓
+""
+``` 
 ## Chunking strategie
 
 ![strategie](../../img/chunking.jpg)
