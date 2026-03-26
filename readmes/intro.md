@@ -53,3 +53,11 @@ Global md file
 
 ### Tool 
 - see the [function ](./list/tools/functions.md).
+
+
+### Rag 
+- see the [workflow ](./list/rag/retrieval_augmented_generation.md).
+
+
+### Features 
+- see the [workflow ](./list/features/img.md).
