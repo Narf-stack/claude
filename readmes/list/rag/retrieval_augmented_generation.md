@@ -91,3 +91,21 @@ BM25 excels at finding exact matches because it:
 > - Ignores common words that don't add search value
 > - Focuses on term frequency rather than semantic meaning
 > - Works especially well for technical terms, IDs, and specific phrases
+
+
+
+
+## Reciprocal Rank Fusion
+Merging results from different search methods,for an hybrid approach, isn't as simple as just concatenating lists. Each method uses different scoring systems, so we need a way to normalize and combine their rankings fairly
+
+
+![strategie](../../img/Reciprocal%20Rank%20Fusion.jpg)
+
+
+We combine these into a single table showing each text chunk's rank from both indexes, then apply the RRF formula:
+
+```bash
+RRF_score(d) = Σ(1 / (k + rank_i(d)))
+``` 
+
+Where k is a constant (often 60, but we'll use 1 for clearer results) and rank_i(d) is the rank of document d in the i-th ranking.
