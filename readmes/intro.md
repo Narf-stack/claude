@@ -60,4 +60,6 @@ Global md file
 
 
 ### Features 
-- see the [workflow ](./list/features/img.md).
+- see the [Image handling ](./list/features/img.md).
+- see the [PDF handling ](./list/features/pdf.md).
+- see the [Prompt caching](./list/features/prompt_caching.md).
