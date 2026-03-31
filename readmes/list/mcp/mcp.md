@@ -77,3 +77,23 @@ The ecosystem includes servers for:
 - Workstream Awareness : Slack & Notion 
 - Web scrapping : Apify
 
+
+<br/>
+<br/>
+<br/>
+
+## MCP Communication
+
+![I](../../img/mcp_comm_1.jpg)
+<br/>
+
+![II](../../img/mcp_comm_2.jpg)
+
+
+<br/>
+<br/>
+<br/>
+
+## MCP Communication flow
+
+![flow](../../img/mcp_flow.jpg)
