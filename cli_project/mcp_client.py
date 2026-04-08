@@ -1,5 +1,7 @@
 import sys
 import asyncio
+import json
+from pydantic import AnyUrl
 from typing import Optional, Any
 from contextlib import AsyncExitStack
 from mcp import ClientSession, StdioServerParameters, types
@@ -62,8 +64,18 @@ class MCPClient:
     return []
 
   async def read_resource(self, uri: str) -> Any:
-    # TODO: Read a resource, parse the contents and return it
-    return []
+    # Read a resource, parse the contents and return it
+    result = await self.session().read_resource(AnyUrl(uri))
+    content = result.contents[0]
+
+    if isinstance(content, types.ResourceContents):
+      if content.mimeType == "application/json":
+        return json.loads(content.text)
+      elif content.mimeType.startswith("text/"):
+        return content.text
+      else:
+        raise ValueError(f"Unsupported MIME type: {content.mimeType}")
+
 
   async def cleanup(self):
     await self._exit_stack.aclose()
@@ -84,10 +96,15 @@ async def main():
     command="uv",
     args=["run", "mcp_server.py"],
   ) as _client:
-    result = await _client.list_tools()
-    print("Tools available on the MCP server:")
-    for tool in result:
-      print(f"- {tool.name}: {tool.description}") 
+    # List tools available on the MCP server
+    # result = await _client.list_tools()
+    # print("Tools available on the MCP server:")
+    # for tool in result:
+    #   print(f"- {tool.name}: {tool.description}") 
+
+    #read a resource
+    resource_content = await _client.read_resource("docs://documents/deposition.md")
+    print(f"Contents of the resource: {resource_content}")
 
 
 if __name__ == "__main__":
