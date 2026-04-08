@@ -60,8 +60,9 @@ class MCPClient:
     return result.prompts 
 
   async def get_prompt(self, prompt_name, args: dict[str, str]):
-    # TODO: Get a particular prompt defined by the MCP server
-    return []
+    # Get a particular prompt defined by the MCP server
+    result = await self.session().get_prompt(prompt_name, args)
+    return result.messages
 
   async def read_resource(self, uri: str) -> Any:
     # Read a resource, parse the contents and return it
@@ -103,8 +104,15 @@ async def main():
     #   print(f"- {tool.name}: {tool.description}") 
 
     #read a resource
-    resource_content = await _client.read_resource("docs://documents/deposition.md")
-    print(f"Contents of the resource: {resource_content}")
+    # resource_content = await _client.read_resource("docs://documents/deposition.md")
+    # print(f"Contents of the resource: {resource_content}")
+
+    # read prompts available on the MCP server
+    prompts = await _client.list_prompts()
+    print("Prompts available on the MCP server:")
+    for prompt in prompts:
+      print(f"- {prompt.name}: {prompt.description}") 
+      
 
 
 if __name__ == "__main__":

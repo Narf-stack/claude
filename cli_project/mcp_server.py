@@ -93,6 +93,19 @@ def rewrite_doc_markdown(doc_id: str = Field("id of the doc to format")) -> list
     base.UserMessage(prompt)
   ]
 
+
+# @mcp.prompt(
+#   name="test",
+#   description="test prompt"
+# )
+# def test_prompt() -> str:
+#   prompt = f"""
+#     This is a test prompt that does not do anything.
+#   """
+#   return [
+#     base.UserMessage(prompt)
+#   ]
+
 # TODO: Write a prompt to summarize a doc
 
 

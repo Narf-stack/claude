@@ -103,6 +103,15 @@ The ecosystem includes servers for:
 <br/>
 <br/>
 
+## MCP primitives
+
+![mcp primitis](../../img/primitives.png)
+
+
+<br/>
+<br/>
+<br/>
+
 ## The server inspector
 
 <br/>
