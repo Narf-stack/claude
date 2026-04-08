@@ -58,3 +58,20 @@ uigen/src/generated/prisma
 # database
 uigen/prisma/dev.db
 uigen/prisma/dev.db-journal
+
+
+
+### CLI PLROJECT 
+
+cli_project/node_modules
+cli_project/.pnp
+cli_project/.pnp.*
+cli_project/.yarn/*
+!cli_project/.yarn/patches
+!cli_project/.yarn/plugins
+!cli_project/.yarn/releases
+!cli_project/.yarn/versions  
+cli_project/.env
+cli_project/__pycache__
+cli_project/.venv
+cli_project/.DS_Store
