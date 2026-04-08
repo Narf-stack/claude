@@ -126,3 +126,23 @@ To test the tools:
 > - Click "Run Tool" to execute and see results
 
 
+<br/>
+<br/>
+<br/>
+
+## Ressources
+<br/>
+
+Resources in MCP servers allow us to expose data to clients, similar to `GET` request handlers in a typical HTTP server. They're perfect for scenarios where you need to fetch information rather than perform actions.
+<br/>
+
+Resources follow a `request-response pattern`. The client sends a `ReadResourceRequest` with a URI, and the MCP server responds with the data. The URI acts like an address for the resource you want to access.
+
+![Ressources](../../img/ressources.jpg)
+<br/>
+
+### Types of Resources
+<br/>
+
+There are two types of resources:
+![Type of ressources](../../img/type_of_ressources.jpg)
