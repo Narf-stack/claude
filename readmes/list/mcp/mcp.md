@@ -97,3 +97,32 @@ The ecosystem includes servers for:
 ## MCP Communication flow
 
 ![flow](../../img/mcp_flow.jpg)
+
+
+<br/>
+<br/>
+<br/>
+
+## The server inspector
+
+<br/>
+
+A development server on `port 6277` with a local URL to open in the browser. The inspector interface will load, showing the MCP Inspector dashboard.
+
+Run it with : 
+```bash
+mcp dev mcp_server.py
+``` 
+<br/>
+
+Once connected, we can see a navigation bar with sections for` Resources`, `Prompts`, `Tools`, and other features.
+<br/>
+
+To test the tools:
+> - Navigate to the Tools section
+> - Click "List Tools" to see all available tools
+> - Select a tool to open its testing interface
+> - Fill in the required parameters
+> - Click "Run Tool" to execute and see results
+
+

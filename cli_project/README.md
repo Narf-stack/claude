@@ -27,6 +27,10 @@ ANTHROPIC_API_KEY=""  # Enter your Anthropic API secret key
 
 ```bash
 pip install uv
+
+OR
+
+pipx install uv
 ```
 
 2. Create and activate a virtual environment:
