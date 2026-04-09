@@ -68,4 +68,10 @@ Global md file
 
 
 ### Agents and workflows
-- see the [file](./list/agt_n_workflow/base.md).
+- see the [base](./list/agt_n_workflow/base.md).
+- see the [workflow](./list/agt_n_workflow/workflows.md).
+
+
+
+
+cmd + shift + v = preview
