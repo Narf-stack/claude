@@ -34,10 +34,10 @@ uigen/.playwright-mcp
 uigen/*.pem
 
 # debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+uigen/npm-debug.log*
+uigen/yarn-debug.log*
+uigen/yarn-error.log*
+uigen/.pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
 uigen/.env
@@ -75,3 +75,27 @@ cli_project/.env
 cli_project/__pycache__
 cli_project/.venv
 cli_project/.DS_Store
+
+
+
+
+
+
+###### APP STARTER
+
+app_starter/.DS_Store
+app_starter/.trees
+
+# Python-generated files
+app_starter/__pycache__/
+app_starter/*.py[oc]
+app_starter/build/
+app_starter/dist/
+app_starter/wheels/
+app_starter/*.egg-info
+
+
+# Virtual environments
+app_starter/.venv
+app_starter/.pytest_cache
+app_starter/app.egg-info
