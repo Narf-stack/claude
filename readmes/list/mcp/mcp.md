@@ -155,3 +155,28 @@ Resources follow a `request-response pattern`. The client sends a `ReadResourceR
 
 There are two types of resources:
 ![Type of ressources](../../img/type_of_ressources.jpg)
+
+
+<br/>
+<br/>
+<br/>
+
+
+
+## Setting Up an MCP Server
+<br/>
+
+Adding an MCP server to Claude Code is straightforward. 
+Use the command line to register the server:
+
+```bash
+claude mcp add [server-name] [command-to-start-server]
+``` 
+
+For example, if we have a document processing server that starts with `uv run main.py`, we'd run:
+
+```bash
+claude mcp add documents uv run main.py
+``` 
+
+Once registered, Claude Code will automatically connect to the server when it starts up.

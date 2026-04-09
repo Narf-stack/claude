@@ -99,3 +99,5 @@ app_starter/*.egg-info
 app_starter/.venv
 app_starter/.pytest_cache
 app_starter/app.egg-info
+
+app_starter/tools/__pycache__/math.cpython-312.pyc
